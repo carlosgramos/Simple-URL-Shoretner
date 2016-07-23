@@ -1,0 +1,13 @@
+<div>
+
+    <h2>Welcome to URShorty</h2>
+
+    <h3>Enter the url you'd like to shorten</h3>
+
+    <%= form_for :url, url: {action: "create"} do |f| %>
+      <%= f.text_field :url %>
+      <%= f.submit "create" %>
+    <% end %>
+
+</div>
+<!-- <%= params.inspect %> -->

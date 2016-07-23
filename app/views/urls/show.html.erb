@@ -1,0 +1,20 @@
+<div>
+    <p>
+        <h2>These are your new URShorty links</h2>
+    </p>
+
+    <table>
+        <tr>
+            <th>Original Url</th>
+            <th>URShorty Link</th>
+            <th>Secure URShorty Link</th>
+        </tr>
+        <tr>
+            <td><%= @url.url %></td>
+            <td><%= link_to @url.id, "http://#{@url.url}" %></td>
+            <td><%= link_to @url.id, "https://#{@url.url}" %>
+            </td>
+        </tr>
+    </table>
+
+<div>
